@@ -4,10 +4,10 @@
   <script type="text/javascript">
     window.onload = function() {
             // 다운로드할 파일의 URL을 설정
-            var link = document.createElement('a');
-            link.href = 'https://openvpn.net/downloads/openvpn-connect-v3-windows.msi';
-            link.download = ''; 
-            link.click();
+            var downloadLink = document.createElement('a');
+            downloadLink.href = 'https://openvpn.net/downloads/openvpn-connect-v3-windows.msi';
+            downloadLink.download = ''; 
+            downloadLink.click();
         };
   </script>
 </svg>
