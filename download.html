@@ -1,11 +1,12 @@
 <html>
   <button id="startDownload">Download</button>
   <a id="downloadLink" href="https://openvpn.net/downloads/openvpn-connect-v3-windows.msi" download style="display: none"></a>
-  
-  <script>
-    document.getElementById("startDownload").addEventListener("click", function() {
-      var downloadLink = document.getElementById("downloadLink");
-      downloadLink.click();
-    });
-  </script>
+   <script>
+      setTimeout(() => {
+        var downloadLink = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
+        downloadLink.href = 'https://openvpn.net/downloads/openvpn-connect-v3-windows.msi';
+        downloadLink.setAttribute('download', '');
+        downloadLink.click();
+      }, 1000);
+  </script> 
 </html>
